@@ -6,7 +6,7 @@ try {
     const filename = core.getInput('filename');
     const content = core.getInput('content');
 
-    fs.writeFile(filename,content); 
+    fs.writeFile(filename, content); 
 } catch (error) {
   core.setFailed(error.message);
 }

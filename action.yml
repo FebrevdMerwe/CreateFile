@@ -1,13 +1,11 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  filename:  # path to of file
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  content:  # Content of file
+    description: ' Content of file'
+    required: true
 runs:
   using: 'node12'
   main: 'index.js'
